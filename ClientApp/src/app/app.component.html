@@ -1,17 +1,30 @@
 <div>
-<!-- header -->
-<div>
-<app-header></app-header>
-</div>
+  <!-- header -->
+  <div>
+    <app-header></app-header>
+  </div>
 
-<!-- placeholder -->
-<div class="container m-3 h-100">
-<router-outlet />
-</div>
+  <div class="">
 
-<!-- footer  -->
-<div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Settings
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- placeholder -->
+  <div class="container m-3 h-100">
+    <router-outlet />
+  </div>
+
+  <!-- footer  -->
+  <div>
     <app-footer></app-footer>
+  </div>
 </div>
-</div>
-
